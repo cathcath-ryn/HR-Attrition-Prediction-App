@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR Attrition Predictor</title>
+</head>
 
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Employee Attrition Predictor</h2>
+
+    <form action="/predict" method="post" class="card p-4 shadow">
+
+        <div class="mb-3">
+            <label>Monthly Income</label>
+            <input type="number" name="MonthlyIncome" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>OverTime</label>
+            <select name="OverTime" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Age</label>
+            <input type="number" name="Age" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Daily Rate</label>
+            <input type="number" name="DailyRate" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Total Working Years</label>
+            <input type="number" name="TotalWorkingYears" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Hourly Rate</label>
+            <input type="number" name="HourlyRate" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Monthly Rate</label>
+            <input type="number" name="MonthlyRate" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Years at Company</label>
+            <input type="number" name="YearsAtCompany" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Distance From Home</label>
+            <input type="number" name="DistanceFromHome" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Predict</button>
+    </form>
+
+    <div class="mt-4 text-center">
+        <h4>{{ prediction_text }}</h4>
+    </div>
+
+</div>
+
+</body>
+</html>
