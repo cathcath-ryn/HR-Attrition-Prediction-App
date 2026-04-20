@@ -71,7 +71,7 @@
         <form action="/predict" method="post">
 
             <!-- Monthly Income -->
-            <label>Monthly Income <span class="slider-value" id="income_val"></span></label>
+            <label>Monthly Income (in USD) <span class="slider-value" id="income_val"></span></label>
             <input type="range" name="MonthlyIncome" min="1000" max="20000" step="100"
                    class="form-range" oninput="income_val.innerText=this.value">
 
@@ -81,7 +81,7 @@
                    class="form-range" oninput="age_val.innerText=this.value">
 
             <!-- Daily Rate -->
-            <label class="mt-3">Daily Rate <span class="slider-value" id="daily_val"></span></label>
+            <label class="mt-3">Daily Rate (in USD) <span class="slider-value" id="daily_val"></span></label>
             <input type="range" name="DailyRate" min="100" max="1500"
                    class="form-range" oninput="daily_val.innerText=this.value">
 
@@ -91,12 +91,12 @@
                    class="form-range" oninput="years_val.innerText=this.value">
 
             <!-- Hourly Rate -->
-            <label class="mt-3">Hourly Rate <span class="slider-value" id="hourly_val"></span></label>
+            <label class="mt-3">Hourly Rate (in USD) <span class="slider-value" id="hourly_val"></span></label>
             <input type="range" name="HourlyRate" min="10" max="200"
                    class="form-range" oninput="hourly_val.innerText=this.value">
 
             <!-- Monthly Rate -->
-            <label class="mt-3">Monthly Rate <span class="slider-value" id="monthly_val"></span></label>
+            <label class="mt-3">Monthly Rate (in USD) <span class="slider-value" id="monthly_val"></span></label>
             <input type="range" name="MonthlyRate" min="2000" max="30000"
                    class="form-range" oninput="monthly_val.innerText=this.value">
 
